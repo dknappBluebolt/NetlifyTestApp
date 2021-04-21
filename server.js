@@ -59,6 +59,7 @@ app.prepare().then(() => {
   });
 
   router.get('/reindex', verifyRequest(), async (ctx) => {
+      debugger
       //let job = await workQueue.add({ accessToken: ctx.session.accessToken, shop: ctx.session.shop });
       //console.log('job.id', job.id);
       ctx.respond = true;
