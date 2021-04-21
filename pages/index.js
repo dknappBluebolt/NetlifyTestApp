@@ -1,4 +1,4 @@
-import { Layout, Page, Button, Card } from '@shopify/polaris';
+import { AppProvider, Layout, Page, Button, Card } from '@shopify/polaris';
 import { useState } from 'react';
 import translations from '@shopify/polaris/locales/en.json';
 
