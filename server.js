@@ -58,6 +58,13 @@ app.prepare().then(() => {
     }
   });
 
+  router.get('/reindex', verifyRequest(), async (ctx) => {
+      //let job = await workQueue.add({ accessToken: ctx.session.accessToken, shop: ctx.session.shop });
+      //console.log('job.id', job.id);
+      ctx.respond = true;
+      ctx.res.statusCode = 200;
+  });
+
   router.get("(/_next/static/.*)", handleRequest);
   router.get("/_next/webpack-hmr", handleRequest);
   router.get("(.*)", verifyRequest(), handleRequest);
