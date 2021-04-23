@@ -1,0 +1,11 @@
+#Debugging Steps for Visual Studio Code
+
+1. Set up dev environment to work with a valid shopify app.
+    a. Set the key and secret to the app
+    b. ensure the app url is your current running version of ngrok
+2. Run npm run build
+3. Navigate to your server.js file
+4. In the tool bar at the top select Run->Start Debugging
+5. In the dropdown select Node.js
+
+#ctx.session = needs to have the api key and secret included in the createShopifyAuth function
